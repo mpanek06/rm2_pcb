@@ -1,0 +1,260 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Arduino_Mega-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X05 P?
+U 1 1 57FDAB69
+P 1950 1100
+F 0 "P?" H 1950 1400 50  0000 C CNN
+F 1 "SENOSRS_IN" H 1950 800 50  0000 C CNN
+F 2 "" H 1950 -100 50  0000 C CNN
+F 3 "" H 1950 -100 50  0000 C CNN
+	1    1950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57FDABFE
+P 1000 1450
+F 0 "#PWR?" H 1000 1200 50  0001 C CNN
+F 1 "GND" H 1000 1300 50  0000 C CNN
+F 2 "" H 1000 1450 50  0000 C CNN
+F 3 "" H 1000 1450 50  0000 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1450 1000 900 
+Wire Wire Line
+	1000 900  1700 900 
+Text HLabel 1650 1000 0    60   Input ~ 0
+SENS_IN_1
+Text HLabel 1650 1100 0    60   Input ~ 0
+SENS_IN_3
+Text HLabel 1650 1200 0    60   Input ~ 0
+SENS_IN_5
+Text HLabel 1650 1300 0    60   Input ~ 0
+SENS_IN_7
+Text HLabel 2250 900  2    60   Input ~ 0
+SENS_IN_0
+Text HLabel 2250 1000 2    60   Input ~ 0
+SENS_IN_2
+Text HLabel 2250 1100 2    60   Input ~ 0
+SENS_IN_4
+Text HLabel 2250 1200 2    60   Input ~ 0
+SENS_IN_6
+Text HLabel 2250 1300 2    60   Input ~ 0
+SENS_IN_8
+Wire Wire Line
+	1650 1000 1700 1000
+Wire Wire Line
+	1650 1100 1700 1100
+Wire Wire Line
+	1650 1200 1700 1200
+Wire Wire Line
+	1650 1300 1700 1300
+Wire Wire Line
+	2200 1300 2250 1300
+Wire Wire Line
+	2200 1200 2250 1200
+Wire Wire Line
+	2200 1100 2250 1100
+Wire Wire Line
+	2200 1000 2250 1000
+Wire Wire Line
+	2200 900  2250 900 
+$Comp
+L CONN_01X01 P?
+U 1 1 57FE1867
+P 1250 2200
+F 0 "P?" H 1250 2300 50  0000 C CNN
+F 1 "5V+" V 1350 2200 50  0000 C CNN
+F 2 "" H 1250 2200 50  0000 C CNN
+F 3 "" H 1250 2200 50  0000 C CNN
+	1    1250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57FE18D7
+P 1000 2150
+F 0 "#PWR?" H 1000 2000 50  0001 C CNN
+F 1 "+5V" H 1000 2290 50  0000 C CNN
+F 2 "" H 1000 2150 50  0000 C CNN
+F 3 "" H 1000 2150 50  0000 C CNN
+	1    1000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2150 1000 2200
+Wire Wire Line
+	1000 2200 1050 2200
+$Comp
+L CONN_01X01 P?
+U 1 1 57FE1ADE
+P 1250 2400
+F 0 "P?" H 1250 2500 50  0000 C CNN
+F 1 "5V-" V 1350 2400 50  0000 C CNN
+F 2 "" H 1250 2400 50  0000 C CNN
+F 3 "" H 1250 2400 50  0000 C CNN
+	1    1250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57FE1B21
+P 1000 2500
+F 0 "#PWR?" H 1000 2250 50  0001 C CNN
+F 1 "GND" H 1000 2350 50  0000 C CNN
+F 2 "" H 1000 2500 50  0000 C CNN
+F 3 "" H 1000 2500 50  0000 C CNN
+	1    1000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2400 1000 2400
+Wire Wire Line
+	1000 2400 1000 2500
+$Comp
+L CONN_01X01 P?
+U 1 1 57FE1DE8
+P 2400 2200
+F 0 "P?" H 2400 2300 50  0000 C CNN
+F 1 "PSU_VIN" H 2600 2200 50  0000 C CNN
+F 2 "" H 2400 2200 50  0000 C CNN
+F 3 "" H 2400 2200 50  0000 C CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 57FE1DF6
+P 2400 2400
+F 0 "P?" H 2400 2500 50  0000 C CNN
+F 1 "PSU_VIN-" H 2650 2400 50  0000 C CNN
+F 2 "" H 2400 2400 50  0000 C CNN
+F 3 "" H 2400 2400 50  0000 C CNN
+	1    2400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 57FE2158
+P 1800 2300
+F 0 "P?" H 1800 2450 50  0000 C CNN
+F 1 "PSU_TERMINAL_BLOCK" V 1900 2250 50  0000 C CNN
+F 2 "" H 1800 2300 50  0000 C CNN
+F 3 "" H 1800 2300 50  0000 C CNN
+	1    1800 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2250 2050 2250
+Wire Wire Line
+	2050 2250 2050 2200
+Wire Wire Line
+	2050 2200 2200 2200
+Wire Wire Line
+	2000 2350 2050 2350
+Wire Wire Line
+	2050 2350 2050 2400
+Wire Wire Line
+	2050 2400 2200 2400
+$Comp
+L SW_PUSH_SMALL_H SW?
+U 1 1 57FE29DD
+P 1150 3150
+F 0 "SW?" H 1230 3260 50  0000 C CNN
+F 1 "RST" H 1150 3050 50  0000 C CNN
+F 2 "" H 1150 3350 50  0000 C CNN
+F 3 "" H 1150 3350 50  0000 C CNN
+	1    1150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 57FE2CD4
+P 1150 3400
+F 0 "C?" H 1160 3470 50  0000 L CNN
+F 1 "100nF" H 1160 3320 50  0000 L CNN
+F 2 "" H 1150 3400 50  0000 C CNN
+F 3 "" H 1150 3400 50  0000 C CNN
+	1    1150 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 3400 950  3400
+Wire Wire Line
+	950  3400 950  3150
+Wire Wire Line
+	800  3150 950  3150
+Wire Wire Line
+	950  3150 1000 3150
+Wire Wire Line
+	1250 3400 1350 3400
+Wire Wire Line
+	1350 3400 1350 3150
+Wire Wire Line
+	1300 3150 1350 3150
+Wire Wire Line
+	1350 3150 1500 3150
+Text HLabel 800  3150 0    60   Input ~ 0
+RST
+Connection ~ 950  3150
+$Comp
+L GND #PWR?
+U 1 1 57FE30FD
+P 1500 3350
+F 0 "#PWR?" H 1500 3100 50  0001 C CNN
+F 1 "GND" H 1500 3200 50  0000 C CNN
+F 2 "" H 1500 3350 50  0000 C CNN
+F 3 "" H 1500 3350 50  0000 C CNN
+	1    1500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3150 1500 3350
+Connection ~ 1350 3150
+$EndSCHEMATC
