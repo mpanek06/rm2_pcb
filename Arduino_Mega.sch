@@ -173,8 +173,10 @@ Wire Wire Line
 	2925 1600 2825 1600
 Wire Wire Line
 	2825 1700 2925 1700
-Text GLabel 4625 1950 0    60   Input ~ 0
+Text GLabel 4650 1950 0    60   Input ~ 0
 RST
 Wire Wire Line
-	4625 1950 4700 1950
+	4650 1950 4700 1950
+Wire Wire Line
+	4375 900  4700 900 
 $EndSCHEMATC
