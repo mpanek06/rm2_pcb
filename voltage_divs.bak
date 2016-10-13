@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:borniers
 LIBS:Arduino_Mega-cache
 EELAYER 25 0
 EELAYER END

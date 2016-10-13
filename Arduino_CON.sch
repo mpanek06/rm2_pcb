@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:borniers
 LIBS:Arduino_Mega-cache
 EELAYER 25 0
 EELAYER END
@@ -148,70 +149,6 @@ Text Label 4100 3875 0    60   ~ 0
 A14
 Text Label 4100 3975 0    60   ~ 0
 A15
-Text Label 6050 4675 1    60   ~ 0
-22
-Text Label 5950 4675 1    60   ~ 0
-24
-Text Label 5850 4675 1    60   ~ 0
-26
-Text Label 5750 4675 1    60   ~ 0
-28
-Text Label 5650 4675 1    60   ~ 0
-30
-Text Label 5550 4675 1    60   ~ 0
-32
-Text Label 5450 4675 1    60   ~ 0
-34
-Text Label 5350 4675 1    60   ~ 0
-36
-Text Label 5250 4675 1    60   ~ 0
-38
-Text Label 5150 4675 1    60   ~ 0
-40
-Text Label 5050 4675 1    60   ~ 0
-42
-Text Label 4950 4675 1    60   ~ 0
-44
-Text Label 4850 4675 1    60   ~ 0
-46
-Text Label 4750 4675 1    60   ~ 0
-48
-Text Label 4650 4825 1    60   ~ 0
-50(MISO)
-Text Label 4550 4825 1    60   ~ 0
-52(SCK)
-Text Label 6050 5850 1    60   ~ 0
-23
-Text Label 5950 5850 1    60   ~ 0
-25
-Text Label 5850 5850 1    60   ~ 0
-27
-Text Label 5650 5850 1    60   ~ 0
-31
-Text Label 5750 5850 1    60   ~ 0
-29
-Text Label 5550 5850 1    60   ~ 0
-33
-Text Label 5450 5850 1    60   ~ 0
-35
-Text Label 5350 5850 1    60   ~ 0
-37
-Text Label 5250 5850 1    60   ~ 0
-39
-Text Label 5150 5850 1    60   ~ 0
-41
-Text Label 5050 5850 1    60   ~ 0
-43
-Text Label 4950 5850 1    60   ~ 0
-45
-Text Label 4850 5850 1    60   ~ 0
-47
-Text Label 4750 5850 1    60   ~ 0
-49
-Text Label 4650 6000 1    60   ~ 0
-51(MOSI)
-Text Label 4550 6000 1    60   ~ 0
-53(SS)
 Text Label 6025 3975 0    60   ~ 0
 21(SCL)
 Text Label 6025 3875 0    60   ~ 0
@@ -297,132 +234,15 @@ F 3 "" H 5950 2200 60  0000 C CNN
 $EndComp
 $Comp
 L GND #PWR021
-U 1 1 5519CDF8
-P 4325 6125
-F 0 "#PWR021" H 4325 6125 30  0001 C CNN
-F 1 "GND" H 4325 6055 30  0001 C CNN
-F 2 "" H 4325 6125 60  0000 C CNN
-F 3 "" H 4325 6125 60  0000 C CNN
-	1    4325 6125
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR022
-U 1 1 5519D165
-P 6275 4325
-F 0 "#PWR022" H 6275 4415 20  0001 C CNN
-F 1 "+5V" H 6275 4415 30  0000 C CNN
-F 2 "" H 6275 4325 60  0000 C CNN
-F 3 "" H 6275 4325 60  0000 C CNN
-	1    6275 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_18X2 P1
-U 1 1 5519A11D
-P 5250 5225
-F 0 "P1" H 5250 6125 60  0000 C CNN
-F 1 "Digital" V 5250 5225 50  0000 C CNN
-F 2 "Socket_Arduino_Mega:Socket_Strip_Arduino_2x18" H 5250 5075 60  0001 C CNN
-F 3 "" H 5250 5075 60  0000 C CNN
-	1    5250 5225
-	0    -1   1    0   
-$EndComp
-$Comp
-L GND #PWR023
 U 1 1 5519C84C
 P 4775 2200
-F 0 "#PWR023" H 4775 2200 30  0001 C CNN
+F 0 "#PWR021" H 4775 2200 30  0001 C CNN
 F 1 "GND" H 4775 2130 30  0001 C CNN
 F 2 "" H 4775 2200 60  0000 C CNN
 F 3 "" H 4775 2200 60  0000 C CNN
 	1    4775 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 4450 4550 4825
-Wire Wire Line
-	4650 4450 4650 4825
-Wire Wire Line
-	4750 4450 4750 4825
-Wire Wire Line
-	4850 4450 4850 4825
-Wire Wire Line
-	4950 4450 4950 4825
-Wire Wire Line
-	5050 4450 5050 4825
-Wire Wire Line
-	5150 4450 5150 4825
-Wire Wire Line
-	5250 4450 5250 4825
-Wire Wire Line
-	5350 4450 5350 4825
-Wire Wire Line
-	5450 4450 5450 4825
-Wire Wire Line
-	5550 4450 5550 4825
-Wire Wire Line
-	5650 4450 5650 4825
-Wire Wire Line
-	5750 4450 5750 4825
-Wire Wire Line
-	5850 4450 5850 4825
-Wire Wire Line
-	5950 4450 5950 4825
-Wire Wire Line
-	6050 4450 6050 4825
-Wire Wire Line
-	5450 5625 5450 6000
-Wire Wire Line
-	5550 5625 5550 6000
-Wire Wire Line
-	5650 5625 5650 6000
-Wire Wire Line
-	5750 5625 5750 6000
-Wire Wire Line
-	5850 5625 5850 6000
-Wire Wire Line
-	5950 5625 5950 6000
-Wire Wire Line
-	6050 5625 6050 6000
-Wire Wire Line
-	5350 5625 5350 6000
-Wire Wire Line
-	4550 5625 4550 6000
-Wire Wire Line
-	4650 5625 4650 6000
-Wire Wire Line
-	4750 5625 4750 6000
-Wire Wire Line
-	4850 5625 4850 6000
-Wire Wire Line
-	4950 5625 4950 6000
-Wire Wire Line
-	5050 5625 5050 6000
-Wire Wire Line
-	5150 5625 5150 6000
-Wire Wire Line
-	5250 5625 5250 6000
-Wire Wire Line
-	4450 4825 4450 4450
-Wire Wire Line
-	4450 5625 4450 6000
-Wire Wire Line
-	6150 4825 6150 4450
-Wire Wire Line
-	6150 5625 6150 6000
-Wire Wire Line
-	4325 4450 4325 6125
-Wire Wire Line
-	4450 4450 4325 4450
-Wire Wire Line
-	4450 6000 4325 6000
-Connection ~ 4325 6000
-Wire Wire Line
-	6150 4450 6275 4450
-Wire Wire Line
-	6150 6000 6275 6000
-Connection ~ 6275 4450
 Wire Wire Line
 	4850 1525 4775 1525
 Wire Wire Line
@@ -439,8 +259,6 @@ Wire Wire Line
 	4400 1250 4400 2125
 Wire Wire Line
 	4400 2125 4850 2125
-Wire Wire Line
-	6275 6000 6275 4325
 Wire Wire Line
 	5875 1625 6600 1625
 Wire Wire Line

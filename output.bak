@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:borniers
 LIBS:Arduino_Mega-cache
 EELAYER 25 0
 EELAYER END
@@ -265,7 +266,7 @@ U 1 1 57FEF71D
 P 2175 2175
 F 0 "P9" H 2175 2325 50  0000 C CNN
 F 1 "PWR_OUT" V 2275 2175 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x02" H 2175 2175 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 2175 2175 50  0001 C CNN
 F 3 "" H 2175 2175 50  0000 C CNN
 	1    2175 2175
 	1    0    0    -1  
